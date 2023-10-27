@@ -290,13 +290,13 @@
           clearInterval(timer)
           clearInterval(timerTwo)
           audio.src = './sounds/' + soundFile
-          audio.load()
-          audio.play()
+          // audio.load()
+          // audio.play()
           // audio.pause()
-          // setTimeout(() => {
-          //   audio.currentTime = 0
-          //   audio.play()
-          // }, 100)
+          setTimeout(() => {
+            // audio.currentTime = 0
+            audio.play()
+          }, 950)
           timeoutModal.show()
           // setTimeout(() => set(), 1000)
         } else {
