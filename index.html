@@ -291,6 +291,11 @@
           clearInterval(timerTwo)
           audio.src = './sounds/' + soundFile
           audio.play()
+          audio.pause()
+          setTimeout(() => {
+            audio.currentTime = 0
+            audio.play()
+          })
           timeoutModal.show()
           // setTimeout(() => set(), 1000)
         } else {
